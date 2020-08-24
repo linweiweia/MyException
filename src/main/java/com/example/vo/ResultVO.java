@@ -10,11 +10,14 @@ public class ResultVO<T> {
 
     //返回代码
     private String code;
-
     //返回信息
     private String message;
-
     //返回数据
     private T data;
+
+    //构造方法
+    public ResultVO(T data){
+
+    }
 }
 

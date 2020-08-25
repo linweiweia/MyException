@@ -1,16 +1,19 @@
-package com.example.model;
+package com.example.myexception.model;
+
+import lombok.Data;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-
 /**
  * @author linweiwei
  * @version 1.0
- * @date 2020-08-24 17:48
+ * @date 2020-08-25 13:15
  * @describe:
  */
+
+@Data
 public class User {
 
     @NotNull(message = "用户Id不能为空")
@@ -27,5 +30,4 @@ public class User {
     @NotNull(message = "用户邮箱不能为空")
     @Email(message = "邮箱格式不正确")
     private String email;
-
 }

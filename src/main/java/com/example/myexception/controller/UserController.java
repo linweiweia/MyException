@@ -26,7 +26,6 @@ public class UserController {
         return userService.addUser(user);
     }
 
-
     @GetMapping("/get")
     public void get() {
         System.out.println("get");

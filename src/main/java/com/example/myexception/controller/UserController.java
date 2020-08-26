@@ -27,7 +27,24 @@ public class UserController {
     }
 
     @GetMapping("/get")
-    public void get() {
-        System.out.println("get");
+    public User get() {
+        User user = new User();
+        user.setId(1L);
+        user.setAccount("12345678");
+        user.setPassword("12345678");
+        user.setEmail("123@qq.com");
+        return user;
     }
+
+
+    @GetMapping("/string")
+    public String getString() {
+        return "user";
+    }
+
+    @GetMapping("myException")
+    public String myException() {
+        return userService.myException();
+    }
+
 }

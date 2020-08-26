@@ -20,6 +20,11 @@ public class ResultVO<T> {
     private T data;
 
     //构造方法
+    public ResultVO(T data){
+        this(ResultCode.SUCCESS, data);
+    }
+
+    //构造方法
     public ResultVO(ResultCode resultCode, T data) {
         this.code = resultCode.getCode();
         this.message = resultCode.getMessage();

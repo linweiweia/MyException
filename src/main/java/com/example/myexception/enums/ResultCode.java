@@ -16,7 +16,8 @@ public enum  ResultCode {
     SUCCESS(1000,"操作成功"),
     FAILED(1001, "操作失败"),
     VALIDATE_FAILED(1002, "参数错误"),
-    ERROR(5000,"未知错误");
+    ERROR(5000,"未知错误"),
+    MY_EXCEPTION(10000, "自定义异常");
 
     private int code;
     private String message;

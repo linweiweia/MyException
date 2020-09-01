@@ -16,12 +16,12 @@ public class MyException extends RuntimeException{
     private String message;
 
     public MyException() {
-        this(1001, "我是自定义错误");
+        this(10000, "我是自定义错误");
     }
 
 
     public MyException(String message) {
-        this(1001, message);
+        this(10000, message);
     }
 
     public MyException(int code, String message) {

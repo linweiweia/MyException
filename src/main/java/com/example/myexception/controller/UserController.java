@@ -26,6 +26,11 @@ public class UserController {
         return userService.addUser(user);
     }
 
+    @GetMapping("myException")
+    public String myException() {
+        return userService.myException();
+    }
+
     @GetMapping("/get")
     public User get() {
         User user = new User();
@@ -40,11 +45,6 @@ public class UserController {
     @GetMapping("/string")
     public String getString() {
         return "user";
-    }
-
-    @GetMapping("myException")
-    public String myException() {
-        return userService.myException();
     }
 
 }
